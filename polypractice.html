@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- HTML code goes in here -->
+<a href={{url_for('goback')}}>Back to homepage</a>
+Instructions to using the practice: input a degree into the degree textbox(warning: high degrees like degrees greater than 10 may cause the website to become slow). Then, input the roots of the polynomials into the roots textbox, one by one. You will see if your roots are correct or incorrect below the input.
+<br>
+<form action="polypracticing" method="POST">
+  <input type="text" placeholder="Degree of polynomial" name="deg">
+  <input type="text" placeholder="Root(any order)" name="root1">
+  <input type="submit" value="Submit" name="polypracticing">
+</form>
+<br>
+{{phrase}}
+
+{% endblock %}

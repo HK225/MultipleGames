@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- HTML code goes in here -->
+<a href={{url_for('goback')}}>Back to homepage</a>
+
+
+
+<br>
+
+<center>
+<h1>
+  How to play nim
+</h1>
+
+
+<br>
+
+<img src = "{{ url_for('static', filename='nim.png') }}" width = 500, length 500,  border=10, color='red'>
+</center>
+<center>
+<p>Nim is basically a game where you have to take stones from a pile. The person who takes the last stone wins the game. In this creative python version, we have adapted it so that now nim is played with 3 lists, and just like normal nim, the last person to remove an object from the list wins. It will be you vs. the computer, and you will rotate taking turns and removing objects from lists you choose. In the end, the last one to remove an object wins. Good luck!</p>
+</center>
+
+
+
+
+{% endblock %}

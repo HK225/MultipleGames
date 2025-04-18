@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<a href={{url_for('goback')}}>Back to homepage</a>
+
+<img src="static/brawlstars.png" alt= "Brawl Stars" width = "400" height = "350">
+
+<div id = "shoot">
+<form action ="click" method = "post">
+  <button type ="submit" value ="left" name ="left">
+    <img src = "static/cactus.jpg" alt="Image of Cactus Brawler" width=150 height=150>
+  <button type ="submit" value ="middle" name ="middle">
+    <img src = "static/machine.jpg" alt="Image of Machine Brawler" width=150 height=150>
+  <button type ="submit" value ="right" name ="right">
+    <img src = "static/miner.jpg" alt="Image of Miner Brawler" width=150 height=150>"
+
+    
+</div>
+  
+{% endblock %}

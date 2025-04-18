@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- HTML code goes in here -->
+<a href={{url_for('goback')}}>Back to homepage</a>
+
+<form action="simulatevote" method="post">
+  <input type="text" placeholder="Candidate 1" name="c11">
+  <input type="text" placeholder="Candidate 2" name="c21">
+  <input type="text" placeholder="Candidate 3" name="c31">
+  <input type="text" placeholder="Candidate 4" name="c41">
+  <input type="text" placeholder="Candidate 1" name="c12">
+  <input type="text" placeholder="Candidate 2" name="c22">
+  <input type="text" placeholder="Candidate 3" name="c32">
+  <input type="text" placeholder="Candidate 4" name="c42">
+  <input type="text" placeholder="Candidate 1" name="c13">
+  <input type="text" placeholder="Candidate 2" name="c23">
+  <input type="text" placeholder="Candidate 3" name="c33">
+  <input type="text" placeholder="Candidate 4" name="c43">
+</form>
+
+{% endblock %}

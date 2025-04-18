@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- HTML code goes in here -->
+<a href={{url_for('goback')}}>Back to homepage</a>
+
+<img src="static/nim.png" alt= "Nim Game" width = "400" height = "350">
+
+<form action="playnim" method="POST">
+  <input type="text" placeholder="List to remove from" name="listremove">
+  <input type="text" placeholder="Number to remove from list" name="numberremove">
+  <input type="submit" value="Remove" name="playnim">
+</form>
+
+<p>{{list1}}</p>
+<p>{{list2}}</p>
+<p>{{list3}}</p>
+
+{% endblock %}

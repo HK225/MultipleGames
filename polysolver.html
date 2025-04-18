@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- HTML code goes in here -->
+
+<a href={{url_for('goback')}}>Back to homepage</a>
+<br>
+<br>
+<br>
+<h1>Polynomial solver i guess(up to degree 4)</h1>
+<form action="polysolve" method="POST">
+  <input type="text" placeholder="Coefficient deg 4" name="c4">
+  <input type="text" placeholder="Coefficient deg 3" name="c3">
+  <input type="text" placeholder="Coefficient deg 2" name="c2">
+  <input type="text" placeholder="Coefficient deg 1" name="c1">
+  <input type="text" placeholder="Constant" name="c0">
+  <input type="submit" value="Submit" name="polysolvesubmit">
+</form>
+{{phrase}}
+
+{% endblock %}

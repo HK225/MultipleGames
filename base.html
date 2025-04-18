@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+  <title>{% block title %}Flask Final Project{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+     <div id="content" name="content">
+       {% block content %}
+	     {% endblock %}
+    </div>
+  </body>
+</html>

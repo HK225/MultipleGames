@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- HTML code goes in here -->
+Base converter-from base 10
+<a href={{url_for('goback')}}>Back to homepage</a>
+<form action ="baseconving" method="post">
+  <input type="text" name="number" placeholder="number">
+  <input type="text" name= "base" placeholder="base">
+  <input type="submit" value="Convert" name="baseconvsubmit">
+</form>
+Note: conventionally, letters are used to represent numbers greater than 9, with A representing 10, B representing 11, and so on to Z representing 35. For example, 395=10*36+35, so it would be AZ in base 36.
+<br>
+<br>
+  {{thing}}
+<br>
+<br>
+Base converter-to base 10
+<form action="baseconving2" method="post">
+  <input type="text" name="number2" placeholder="number">
+  <input type="text" name="base2" placeholder="base">
+  <input type="submit" value="Convert" name="baseconvsubmit2">
+</form>
+<br>
+{{thing2}}
+<br>
+Note 2: Please use capital letters when converting to base 10.
+<br><br>
+Note 3: I'm too lazy to make a base to base converter because I don't see a way to do it without spamming for loops and type functions, so if you want to go from base x to base y you can convert base x to base 10 and base 10 to base y.
+
+{% endblock %}
+
